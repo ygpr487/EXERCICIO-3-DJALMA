@@ -18,18 +18,20 @@ namespace EXERCICIO_3_DJALMA
 
 
 
-            Console.WriteLine("Escolha uma das figuras abaixo para calcular a área: A B OU C");
 
+            Console.WriteLine("FIGURAS: \n");
             Console.WriteLine("[A] = Triângulo");
             Console.WriteLine("[B] = Losango");
-            Console.WriteLine("[C] = Trapézio");
+            Console.WriteLine("[C] = Trapézio\n");
+
+            Console.Write("Escolha uma das figuras Acima para calcular a área [A] [B] OU [C]: ");
 
 
             figura = Console.ReadLine();
 
 
 
-            Console.WriteLine(figura);
+            
 
 
             switch (figura)
@@ -38,7 +40,7 @@ namespace EXERCICIO_3_DJALMA
                 case "A":
 
 
-                    Console.WriteLine("A fórmula para calcular a área de um  triângulo é Area=(Base x altura)/2 \n");
+                    Console.WriteLine("\nA fórmula para calcular a área de um  triângulo é Area=(Base x altura)/2 \n");
 
                     Console.Write("informe o valor da BASE: ");
                     double b = Convert.ToDouble(Console.ReadLine());
@@ -56,7 +58,7 @@ namespace EXERCICIO_3_DJALMA
                 case "B":
 
 
-                    Console.WriteLine("A fórmula para calcular a área de um losango é Area= (Diagonal MAIOR x Diagonal menor) /2 \n");
+                    Console.WriteLine("\nA fórmula para calcular a área de um losango é Area= (Diagonal MAIOR x Diagonal menor) /2 \n");
 
                     Console.Write("informe o valor da Diagonal MAIOR: ");
                     double dmaior = Convert.ToDouble(Console.ReadLine());
@@ -74,7 +76,7 @@ namespace EXERCICIO_3_DJALMA
                 case "c":
 
 
-                    Console.WriteLine("A fórmula para calcular a área de um Trapézio é Area= (Base Maior + Base Menor) x altura/2 \n ");
+                    Console.WriteLine("\nA fórmula para calcular a área de um Trapézio é Area= (Base Maior + Base Menor) x altura/2 \n ");
 
                     Console.Write("informe o valor da  BASE MAIOR: ");
                     double bmaior = Convert.ToDouble(Console.ReadLine());
